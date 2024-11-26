@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <img class="background" src="halie-west-25xggax4bSA-unsplash.jpg" alt="forest backgroung">
+            <div class="banner">
+                <div class="logo">
+                    <img class="logo" src="image.png" alt="logo" title="Photo by Halie West on Unsplash">
+                    ODIN
+                </div>
+            </div>
+        </div>
+        <div class="form">
+            <div class="intro">
+                This is not a real online service! You know you need something <br> like this
+                in your life to help you realise your deepest dreams. <br> Sign up <em>now</em>  to get
+                started. <br> <br> You <em>know</em> you want to.
+            </div>
+
+            <form action="#">
+                <legend>Let's do this!</legend>
+
+                <section class="name">
+                    <div>
+                        <label for="firstname">FIRST NAME</label>
+                        <input type="text" name="firstname" id="firstname" required>
+                    </div>
+
+                    <div>
+                        <label for="lastname">LAST NAME</label>
+                        <input type="text" id="lastname" name="lastname" required>
+                    </div>
+                </section>
+
+                <section class="contact">
+                    <div>
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+
+                    <div>
+                        <label for="number">PHONE NUMBER</label>
+                        <input type="text" name="number" id="number" pattern="\d{3}-\d{3}-\d{4}" required>
+                    </div>
+
+                </section>
+
+                <section class="password">
+                    <div>
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="password" id="password" required>
+                        <label class="error" for="password"></label>
+                    </div>
+
+                    <div>
+                        <label for="confirm_password">CONFIRM PASSWORD</label>
+                        <input type="password" name="confirm_password" id="confirm_password" required>
+                    </div>
+                </section>
+
+            </form>
+            <div class="idk">
+                <button class="submit">Create Account</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
+
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
